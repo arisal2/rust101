@@ -1,0 +1,9 @@
+# Cargo build output (including nested handbook projects)
+**/target/
+
+# rustfmt backup files
+**/*.rs.bk
+
+# Debugger output generated on Windows
+*.pdb
+
