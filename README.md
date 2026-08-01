@@ -1,15 +1,18 @@
 # Rust 101
 
-My exercises and notes while learning Rust with [The Rust Programming Language](https://doc.rust-lang.org/book/) and [Rustlings](https://github.com/rust-lang/rustlings).
+My exercises and notes while learning Rust with [The Rust Programming Language](https://doc.rust-lang.org/book/).
 
 ## Current progress
 
 - `hello-world/` — a minimal program compiled directly with `rustc`
 - `hello_cargo/` — a Hello World program created and run with Cargo
-- `guessing_game/` — reads a guess from standard input and prints it back
-- `rustlings/` — small exercises for practicing Rust concepts; currently on `intro2`
+- `guessing_game/` — an interactive number-guessing game
+  - Generates a random secret number from 1 to 100
+  - Uses a `loop` to accept guesses until the player wins
+  - Uses `match` to handle parsing errors
+  - Uses `match` with `Ordering` to report whether a guess is too small, too big, or correct
 
-The Cargo projects use Rust edition 2024. Generated `target/` directories and other temporary Rust files are excluded through the repository's `.gitignore`.
+The Cargo projects use Rust edition 2024. Generated `target/` directories and temporary Rust files are excluded through the repository's `.gitignore`.
 
 ## Running the examples
 
@@ -29,14 +32,3 @@ cargo run
 ```
 
 Replace `hello_cargo` with `guessing_game` to run that project instead.
-
-## Practicing with Rustlings
-
-Start the interactive Rustlings exercise runner:
-
-```sh
-cd rustlings
-rustlings
-```
-
-Rustlings checks each exercise as it is edited and advances after it passes. Exercise files are under `rustlings/exercises/`.
