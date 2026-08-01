@@ -24,11 +24,16 @@ rustc main.rs
 ./main
 ```
 
-Run a Cargo project:
+Run the Cargo Hello World project:
 
 ```sh
 cd hello_cargo
 cargo run
 ```
 
-Replace `hello_cargo` with `guessing_game` to run that project instead.
+Run the guessing game from the repository root:
+
+```sh
+cd guessing_game
+cargo run
+```
